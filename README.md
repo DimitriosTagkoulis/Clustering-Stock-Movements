@@ -1,2 +1,5 @@
-# E-Business-and-Digital-Marketing-Coursework
-Coursework I had to complete during my Msc studies
+# Clustering Stock Market Data to find similarities in stock movements
+
+This project uses Clustering as a method to identify groups of stocks based on their movements, that otherwise would be undetectable. In portfolio management it is common practice to avoid companies from the same sector because they are expected to behave similarly but there may still be individual stocks or groups that don’t follow their respective sectors but others or individual stocks. To identify this phenomenon Partitioning Clustering algorithm k-means and Agglomerative Clustering are used. 
+
+Different parameters (number of clusters, linkage criterions, etc.) are used throughout the project to improve clustering quality. Clustering quality is evaluated both quantitatively with the average silhouette score measure and heuristically by visually inspecting the corresponding scatter plots and also by comparing the labels produced with each stock’s respective sector. The best overall clustering should result should provide separated and cohesive clusters (Silhouette score closer to 1) while also having assigned same sector stocks to the same label. Such a result should provide insights both by helping observe sectors that “move” (either increase or decrease in terms of price) together but also stocks that behave differently than their respective sectors.
